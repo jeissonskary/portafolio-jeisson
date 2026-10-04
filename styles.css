@@ -1,0 +1,214 @@
+body{font-family:Arial,sans-serif;margin:0;background:#ffffff;color:#0f172a;display:flex}
+.hero{width:300px;min-height:100vh;padding:50px 30px;text-align:left;background:#1a2ddb;border-right:1px solid #1423b0;position:fixed;top:0;left:0;overflow-y:auto;box-sizing:border-box}
+.hero-contenido{max-width:100%}
+.contenido{margin-left:300px;flex:1;min-width:0}
+.hero-badge{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:#ffffff;border:1px solid rgba(255,255,255,.4);padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.foto-perfil{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #ffffff;margin-bottom:16px;display:block;margin-left:auto;margin-right:auto}
+.hero h1{font-size:1.8rem;margin:0;line-height:1.2;background:linear-gradient(90deg,#ffffff,#e0e7ff);-webkit-background-clip:text;background-clip:text;color:transparent;overflow-wrap:break-word}
+.subtitle{font-size:1rem;color:#e0e7ff;margin:12px 0 0;line-height:1.5}
+.btn{display:inline-block;padding:10px 24px;background:#0284c7;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;margin-top:16px;transition:all .3s ease}
+.btn:hover{background:#0369a1;transform:translateY(-2px);box-shadow:0 8px 20px rgba(2,132,199,.35)}
+.buttons{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.hero-contacto{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.3)}
+.hero-contacto p{margin:8px 0;font-size:.9rem;color:#e0e7ff;overflow-wrap:break-word}
+.menu-lateral{margin-top:16px;display:flex;flex-direction:column;gap:6px}
+.menu-lateral a{color:#e0e7ff;text-decoration:none;padding:10px 14px;border-radius:8px;transition:all .3s ease;font-size:.95rem}
+.menu-lateral a:hover{background:rgba(255,255,255,.2);color:#ffffff;padding-left:20px}
+.section{max-width:1000px;margin:40px auto;padding:20px}
+.card{background:#f8fafc;padding:20px;margin:15px 0;border-radius:12px;border:1px solid #e2e8f0}
+footer{text-align:center;padding:30px;background:#f1f5f9;margin-left:300px;color:#475569}
+
+.galeria-dashboard{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.dashboard-item{
+    text-align:center;
+}
+
+.dashboard-item p{
+    margin-top:10px;
+    font-size:14px;
+    color:#475569;
+}
+
+.galeria-dashboard img{
+    width:300px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:all .3s ease;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+.galeria-dashboard img:hover{
+    transform:scale(1.05);
+}
+
+/* Modal */
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.9);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:12px;
+}
+
+.experiencia-card{
+    transition:0.3s;
+}
+
+.card-titulo{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+}
+
+.card-titulo h3{
+    margin:0;
+}
+
+.btn-ojo{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:36px;
+    height:36px;
+    border:1px solid #e2e8f0;
+    border-radius:8px;
+    background:#fff;
+    color:#0284c7;
+    cursor:pointer;
+    transition:all .3s ease;
+    flex-shrink:0;
+    margin-top:16px;
+}
+
+.btn-ojo:hover{
+    background:#0284c7;
+    color:#fff;
+    border-color:#0284c7;
+}
+
+.modal-pdf iframe{
+    width:90%;
+    height:90%;
+    border:none;
+    border-radius:12px;
+    background:#fff;
+}
+
+/* Modal Certificados */
+.modal-contenido{
+    background:#fff;
+    border-radius:16px;
+    width:90%;
+    max-width:800px;
+    max-height:90vh;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 20px 60px rgba(0,0,0,.3);
+}
+
+.modal-cerrar{
+    position:absolute;
+    top:12px;
+    right:16px;
+    background:none;
+    border:none;
+    font-size:28px;
+    color:#64748b;
+    cursor:pointer;
+    z-index:10;
+    line-height:1;
+}
+
+.modal-cerrar:hover{
+    color:#0f172a;
+}
+
+.modal-titulo{
+    margin:0;
+    padding:20px 24px 0;
+    font-size:1.4rem;
+    color:#0f172a;
+}
+
+.tabs{
+    display:flex;
+    gap:0;
+    padding:16px 24px 0;
+    border-bottom:2px solid #e2e8f0;
+}
+
+.tab{
+    padding:10px 20px;
+    background:none;
+    border:none;
+    border-bottom:3px solid transparent;
+    color:#64748b;
+    font-size:.95rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.tab:hover{
+    color:#0284c7;
+}
+
+.tab.active{
+    color:#0284c7;
+    border-bottom-color:#0284c7;
+}
+
+.tab-contenido{
+    padding:16px 24px 24px;
+}
+
+.tab-panel{
+    display:none;
+}
+
+.tab-panel.active{
+    display:block;
+}
+
+.tab-panel iframe{
+    width:100%;
+    height:60vh;
+    border:none;
+    border-radius:8px;
+    background:#f1f5f9;
+}
+
+.experiencia-card:hover{
+    transform:translateY(-5px);
+}
+
+.proyecto-card:hover{
+    transform:none;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    body{display:block}
+    .hero{width:auto;min-height:auto;position:static;padding:40px 20px;border-right:none;border-bottom:1px solid #e2e8f0}
+    .contenido{margin-left:0}
+    footer{margin-left:0}
+}
