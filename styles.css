@@ -5,7 +5,13 @@ body{font-family:Arial,sans-serif;margin:0;background:#ffffff;color:#0f172a;disp
 .hero-badge{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:#ffffff;border:1px solid rgba(255,255,255,.4);padding:6px 12px;border-radius:999px;margin-bottom:18px}
 .foto-perfil{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #ffffff;margin-bottom:16px;display:block;margin-left:auto;margin-right:auto}
 .hero h1{font-size:1.8rem;margin:0;line-height:1.2;background:linear-gradient(90deg,#ffffff,#e0e7ff);-webkit-background-clip:text;background-clip:text;color:transparent;overflow-wrap:break-word}
-.subtitle{font-size:1rem;color:#e0e7ff;margin:12px 0 0;line-height:1.5}
+.subtitle{
+    font-size:1.1rem;
+    color:#1d4ed8;
+    font-weight:600;
+    margin:12px 0 20px;
+    line-height:1.5;
+}
 .btn{display:inline-block;padding:10px 24px;background:#0284c7;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;margin-top:16px;transition:all .3s ease}
 .btn:hover{background:#0369a1;transform:translateY(-2px);box-shadow:0 8px 20px rgba(2,132,199,.35)}
 .buttons{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
